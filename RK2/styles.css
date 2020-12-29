@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  tr:nth-child(2n) {
+    background-color: black;
+    color: grey
+  }
+
+ ul {
+    list-style-type: upper-roman;
+    color: black;
+
+  }
+
+  li:nth-child(2n) {
+    background-color: black;
+    color: grey
+  }
+  ul li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: black;
+}
+  
